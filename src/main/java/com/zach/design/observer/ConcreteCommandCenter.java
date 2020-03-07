@@ -14,7 +14,5 @@ public class ConcreteCommandCenter extends CommandCenter {
             if (!obServer.getName().equals(name))
                 obServer.help();
         }
-
-
     }
 }

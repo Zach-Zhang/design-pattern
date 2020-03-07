@@ -4,9 +4,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 被观察者,抽象目标类: 命令控制中心
+ * @Classname CommandCenter
+ * @Description 被观察者,抽象目标类: 命令控制中心
+ * @Date 2020/3/7 10:55
+ * @Created by Zach
  */
-
 public abstract class CommandCenter {
     //战队名称
     protected String allyName;
