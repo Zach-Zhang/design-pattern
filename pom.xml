@@ -8,9 +8,17 @@
     <artifactId>design-pattern</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.1.6.RELEASE</version>
+        <relativePath/>
+    </parent>
     <modules>
         <module>observer</module>
         <module>adapter</module>
+        <module>proxy</module>
+        <module>geekbank-design</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
