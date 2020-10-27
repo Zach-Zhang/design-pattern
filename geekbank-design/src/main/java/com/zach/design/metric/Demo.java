@@ -11,8 +11,8 @@ public class Demo {
         MetricsStorage storage = new RedisMetricsStorage();
         ConsoleReporter consoleReporter = new ConsoleReporter(storage);
         consoleReporter.startRepeatedReport(60, 60);
-
-        EmailReporter emailReporter = new EmailReporter(storage);
+        Aggregator aggregator = new Aggregator();
+        EmailReporter emailReporter = new EmailReporter(storage,aggregator);
         emailReporter.addToAddress("wangzheng@xzg.com");
         emailReporter.startDailyReport();
 

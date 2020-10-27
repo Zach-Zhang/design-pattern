@@ -2,7 +2,6 @@ package com.zach.design.metric;
 
 import com.google.gson.Gson;
 
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.Executors;
@@ -15,9 +14,10 @@ import java.util.concurrent.TimeUnit;
  * Description :
  * Version :1.0
  */
-public class ConsoleReporter {
+public class ConsoleReporter implements StatViewer {
     private MetricsStorage metricsStorage;
     private ScheduledExecutorService executor;
+    private Aggregator aggregator;
 
     public ConsoleReporter(MetricsStorage metricsStorage) {
         this.metricsStorage = metricsStorage;
@@ -30,20 +30,19 @@ public class ConsoleReporter {
             long durationTime = durationInSeconds * 1000;
             long endTime = System.currentTimeMillis();
             long startTime = endTime - durationTime;
+            //获取统计数据
             Map<String, List<RequestInfo>> requestInfos = metricsStorage.getRequestInfos(startTime, endTime);
-            Map<String, RequestStat> stats = new HashMap<>();
-            for (Map.Entry<String, List<RequestInfo>> entry : requestInfos.entrySet()) {
-                String apiName = entry.getKey();
-                List<RequestInfo> requestInfosPerApi = entry.getValue();
-                //2) 根据原始数据,计算得到统计数据
-                RequestStat requestStat = Aggregator.aggregate(requestInfosPerApi, durationTime);
-                stats.put(apiName, requestStat);
-            }
-
-            //3) 将统计数据显示到终端(命令行或邮件)
-            System.out.println("Time Span:[" + startTime + ", " + endTime + "]");
-            Gson gson = new Gson();
-            System.out.println(gson.toJson(stats));
+            //统计数据
+            Map<String, RequestStat> requestStatMap = aggregator.aggregate(requestInfos, durationTime);
+            //输出到控制台
+            output(requestStatMap, startTime, endTime);
         }, 0, periodInSeconds, TimeUnit.SECONDS);
+    }
+
+    @Override
+    public void output(Map<String, RequestStat> requestStats, long startTimeInMillis, long endTimeMills) {
+        System.out.println("Time Span: [" + startTimeInMillis + ", " + endTimeMills + "]");
+        Gson gson = new Gson();
+        System.out.println(gson.toJson(requestStats));
     }
 }

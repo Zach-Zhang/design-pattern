@@ -8,21 +8,23 @@ import java.util.*;
  * Description : 邮件
  * Version :1.0
  */
-public class EmailReporter {
+public class EmailReporter implements StatViewer {
     private static final Long DAY_HOURS_IN_SECONDS = 86400L;
 
     private MetricsStorage metricsStorage;
     private EmailSender emailSender;
     private List<String> toAddress = new ArrayList<>();
+    private Aggregator aggregator;
 
-    public EmailReporter(MetricsStorage metricsStorage) {
-        this(metricsStorage, new EmailSender());
+    public EmailReporter(MetricsStorage metricsStorage, Aggregator aggregator) {
+        this(metricsStorage, new EmailSender(), aggregator);
 
     }
 
-    public EmailReporter(MetricsStorage metricsStorage, EmailSender emailSender) {
+    public EmailReporter(MetricsStorage metricsStorage, EmailSender emailSender, Aggregator aggregator) {
         this.metricsStorage = metricsStorage;
         this.emailSender = emailSender;
+        this.aggregator = aggregator;
     }
 
     public void addToAddress(String address) {
@@ -46,15 +48,14 @@ public class EmailReporter {
                 long startTimeInMillis = endTimeInMillis - durationInMillis;
                 Map<String, List<RequestInfo>> requestInfos = metricsStorage.getRequestInfos(startTimeInMillis, endTimeInMillis);
                 metricsStorage.getRequestInfos(startTimeInMillis, endTimeInMillis);
-                Map stats = new HashMap<>();
-                for (Map.Entry<String, List<RequestInfo>> entry : requestInfos.entrySet()) {
-                    String apiName = entry.getKey();
-                    List requestInfosPerApi = entry.getValue();
-                    RequestStat requestStat = Aggregator.aggregate(requestInfosPerApi, durationInMillis);
-                    stats.put(apiName, requestStat);
-                }
-                //TODO: 格式化为HTML格式,并发送邮件
+                Map<String, RequestStat> requestStatMap = aggregator.aggregate(requestInfos, durationInMillis);
+                output(requestStatMap, startTimeInMillis, endTimeInMillis);
             }
         }, firstTime, DAY_HOURS_IN_SECONDS * 1000);
+    }
+
+    @Override
+    public void output(Map<String, RequestStat> requestStats, long startTimeInMillis, long endTimeMills) {
+        //todo 编写邮件内容
     }
 }
