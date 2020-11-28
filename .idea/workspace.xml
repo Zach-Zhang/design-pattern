@@ -23,45 +23,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fdbcac6c-7091-4ada-b088-79ab2c9562f0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/geekbank-design/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/geekbank-design/src/main/java/com/zach/design/DesingPatternApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/geekbank-design/src/main/java/com/zach/design/config/MapperConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/geekbank-design/src/main/java/com/zach/design/config/TransactionManagerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/geekbank-design/src/main/java/com/zach/design/idgenerator/IdGenerationFailureException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/geekbank-design/src/main/java/com/zach/design/idgenerator/IdGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/geekbank-design/src/main/java/com/zach/design/idgenerator/LogTraceIdGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/geekbank-design/src/main/java/com/zach/design/idgenerator/RandomIdGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/geekbank-design/src/main/java/com/zach/design/metric/Aggregator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/geekbank-design/src/main/java/com/zach/design/metric/ConsoleReporter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/geekbank-design/src/main/java/com/zach/design/metric/Demo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/geekbank-design/src/main/java/com/zach/design/metric/EmailReporter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/geekbank-design/src/main/java/com/zach/design/metric/EmailSender.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/geekbank-design/src/main/java/com/zach/design/metric/MetricsCollector.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/geekbank-design/src/main/java/com/zach/design/metric/MetricsStorage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/geekbank-design/src/main/java/com/zach/design/metric/RedisMetricsStorage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/geekbank-design/src/main/java/com/zach/design/metric/RequestInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/geekbank-design/src/main/java/com/zach/design/metric/RequestStat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/geekbank-design/src/main/java/com/zach/design/objectOriented/APiAuthenticator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/geekbank-design/src/main/java/com/zach/design/objectOriented/ApiRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/geekbank-design/src/main/java/com/zach/design/objectOriented/AuthToken.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/geekbank-design/src/main/java/com/zach/design/objectOriented/CredentialStorage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/geekbank-design/src/main/java/com/zach/design/objectOriented/DefaultApIAuthenticatorImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/geekbank-design/src/main/java/com/zach/design/objectOriented/MysqlCredentialStorageImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/geekbank-design/src/main/java/com/zach/design/richDomain/domain/VirtualWallet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/geekbank-design/src/main/java/com/zach/design/richDomain/domain/VirtualWalletEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/geekbank-design/src/main/java/com/zach/design/richDomain/domain/VirtualWalletTransactionEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/geekbank-design/src/main/java/com/zach/design/richDomain/mapper/VirtualWalletMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/geekbank-design/src/main/java/com/zach/design/richDomain/mapper/VirtualWalletTransactionMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/geekbank-design/src/main/java/com/zach/design/richDomain/service/VirtualWalletService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/design-pattern.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geekbank-design/src/main/java/com/zach/design/strategy/DiscountStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geekbank-design/src/main/java/com/zach/design/strategy/DiscountStrategyFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geekbank-design/src/main/java/com/zach/design/strategy/GrouponDiscountStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geekbank-design/src/main/java/com/zach/design/strategy/NormalDiscountStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geekbank-design/src/main/java/com/zach/design/strategy/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geekbank-design/src/main/java/com/zach/design/strategy/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geekbank-design/src/main/java/com/zach/design/strategy/OrderType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geekbank-design/src/main/java/com/zach/design/strategy/PromotionDiscountStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,6 +48,7 @@
       <list>
         <option value="Singleton" />
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -136,7 +107,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.6075697" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="RebelAgentSelection">
     <selection>jr</selection>
@@ -150,6 +121,7 @@
       <recent name="" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.zach.design.strategy" />
       <recent name="com.zach.design.idgenerator" />
       <recent name="com.zach.design.metric" />
       <recent name="com.zach.design.observer" />
@@ -280,7 +252,7 @@
       <workItem from="1602163934035" duration="9990000" />
       <workItem from="1602463554942" duration="25882000" />
       <workItem from="1603237982295" duration="12469000" />
-      <workItem from="1603523491201" duration="7864000" />
+      <workItem from="1603523491201" duration="29039000" />
     </task>
     <task id="LOCAL-00001" summary="观察者模式,具体请看readMe.md文件">
       <created>1583336704123</created>
@@ -345,7 +317,21 @@
       <option name="project" value="LOCAL" />
       <updated>1584631142857</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="增加了极客时间的设计模式专栏">
+      <created>1603632613610</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1603632613610</updated>
+    </task>
+    <task id="LOCAL-00011" summary="性能计数器">
+      <created>1603760526119</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1603760526119</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TodoView" selected-index="1">
@@ -388,7 +374,9 @@
     <MESSAGE value="新增了适配器模式,并增加了类图" />
     <MESSAGE value="增加了动态代理模式" />
     <MESSAGE value="增加了JDK动态代理模式和cglib代理的demo和说明性脚本" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加了JDK动态代理模式和cglib代理的demo和说明性脚本" />
+    <MESSAGE value="增加了极客时间的设计模式专栏" />
+    <MESSAGE value="性能计数器" />
+    <option name="LAST_COMMIT_MESSAGE" value="性能计数器" />
   </component>
   <component name="WindowStateProjectService">
     <state x="391" y="74" key="#Inspections" timestamp="1602512694967">
@@ -403,10 +391,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="507" y="273" key="#Updates/0.0.1536.824@0.0.1536.824" timestamp="1596889639455" />
-    <state x="739" y="36" key="#com.intellij.ide.util.MemberChooser" timestamp="1603621404900">
+    <state x="739" y="36" key="#com.intellij.ide.util.MemberChooser" timestamp="1606537186441">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="739" y="36" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1603621404900" />
+    <state x="739" y="36" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1606537186441" />
     <state x="449" y="146" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1596889180480">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -423,22 +411,30 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="0" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1603324764776" />
-    <state width="1483" height="355" key="GridCell.Tab.0.bottom" timestamp="1603624525334">
+    <state x="203" y="0" key="CommitChangelistDialog2" timestamp="1603760522871">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1483" height="355" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603624525334" />
-    <state width="1483" height="355" key="GridCell.Tab.0.center" timestamp="1603624525334">
+    <state x="203" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1603760522871" />
+    <state x="147" y="65" key="DiffContextDialog" timestamp="1603632551992">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1483" height="355" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1603624525334" />
-    <state width="1483" height="355" key="GridCell.Tab.0.left" timestamp="1603624525334">
+    <state x="147" y="65" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1603632551992" />
+    <state width="1483" height="59" key="GridCell.Tab.0.bottom" timestamp="1603757421399">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1483" height="355" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1603624525334" />
-    <state width="1483" height="355" key="GridCell.Tab.0.right" timestamp="1603624525334">
+    <state width="1483" height="59" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603757421399" />
+    <state width="1483" height="59" key="GridCell.Tab.0.center" timestamp="1603757421399">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1483" height="355" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1603624525334" />
+    <state width="1483" height="59" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1603757421399" />
+    <state width="1483" height="59" key="GridCell.Tab.0.left" timestamp="1603757421399">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1483" height="59" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1603757421399" />
+    <state width="1483" height="59" key="GridCell.Tab.0.right" timestamp="1603757421399">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1483" height="59" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1603757421399" />
     <state width="1483" height="355" key="GridCell.Tab.1.bottom" timestamp="1603624525334">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -455,14 +451,18 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1483" height="355" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1603624525334" />
-    <state x="242" y="0" key="SettingsEditor" timestamp="1603624251023">
+    <state x="242" y="0" key="SettingsEditor" timestamp="1606532059995">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="242" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1603624251023" />
+    <state x="242" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1606532059995" />
     <state x="423" y="91" width="738" height="655" key="StructurePopup" timestamp="1602426443180">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="423" y="91" width="738" height="655" key="StructurePopup/0.0.1536.824@0.0.1536.824" timestamp="1602426443180" />
+    <state x="261" y="79" key="Vcs.Push.Dialog.v2" timestamp="1603760532169">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="261" y="79" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1603760532169" />
     <state x="0" y="0" key="new project wizard" timestamp="1602164133226">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -480,11 +480,6 @@
           <url>file://$PROJECT_DIR$/proxy/src/main/java/com/zach/proxy/cglib/TestCglib.java</url>
           <line>21</line>
           <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/geekbank-design/src/main/java/com/zach/design/idgenerator/RandomIdGenerator.java</url>
-          <line>23</line>
-          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
